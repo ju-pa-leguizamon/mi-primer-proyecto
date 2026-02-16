@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numero;
+    char opcion;
+
+    cout << "--- VERIFICADOR DE NUMEROS ---" << endl;
+
+    do {
+        cout << "\nIngresa un numero entero: ";
+        cin >> numero;
+
+        // Un numero es par si el residuo de dividirlo entre 2 es cero
+        if (numero % 2 == 0) {
+            cout << "El numero " << numero << " es PAR." << endl;
+        } else {
+            cout << "El numero " << numero << " es IMPAR." << endl;
+        }
+
+        cout << "\n¿Quieres probar con otro numero? (s/n): ";
+        cin >> opcion;
+
+    } while (opcion == 's' || opcion == 'S');
+
+    cout << "Programa finalizado. ¡Suerte con el desarrollo!" << endl;
+
+    return 0;
+}
